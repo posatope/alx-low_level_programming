@@ -19,7 +19,8 @@ int main(void)
 	for (D = a; D <= z; D++)
 	{
 		putchar(D);
-		putchar('\n');
+		
 	}
+	putchar('\n');
 	return (0);
 }

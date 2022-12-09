@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	char D, a ,z;
+	char D, a, z;
 
 	a = 'a';
 
@@ -19,7 +19,7 @@ int main(void)
 	for (D = a; D <= z; D++)
 	{
 		putchar(D);
-		
+
 	}
 	putchar('\n');
 	return (0);

@@ -10,11 +10,7 @@
 
 int main(void)
 {
-	char D, a, z;
-
-	a = 'a';
-
-	z = 'z';
+	char D;
 
 	for (D = 'a'; D <= 'z'; D++)
 	{

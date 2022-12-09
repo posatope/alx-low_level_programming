@@ -10,14 +10,14 @@
 
 int main(void)
 {
-	char D, C;
+	char D;
 
 	for (D = 'a'; D <= 'z'; D++)
 	{
 		putchar(D);
 	}
 
-	for (C = 'A'; C <= 'Z'; C++)
+	for (D = 'A'; D <= 'Z'; D++)
 	{
 		putchar(C);
 	}

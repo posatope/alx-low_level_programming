@@ -12,7 +12,7 @@
 int main(void)
 {
 	int n;
-	char b
+	char b;
 
 	for (n = 0; n <= 9; n++)
 	{

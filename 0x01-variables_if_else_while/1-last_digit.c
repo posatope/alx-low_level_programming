@@ -8,8 +8,11 @@
  *
  * Return: Always 0 (Success)
  */
-/*strlen(n) gives total length of string . string index starts from 0 
-	last index of character is strlen(c)-1*/ 
+/**
+ * strlen(n) gives total length of string . string index starts from 0 
+ * last index of character is strlen(c)-1
+ */
+
 int main(void)
 {
   int n, c;

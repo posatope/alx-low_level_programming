@@ -13,11 +13,12 @@ int main(void)
 	char D, C;
 
 	for (D = 'a'; D <= 'z'; D++)
-	for (C = 'A'; D <= 'Z'; C++)
 	{
 		putchar(D);
+	}
+	for (C = 'A'; D <= 'Z'; C++)
+	{
 		putchar(C);
-
 	}
 	putchar('\n');
 	return (0);

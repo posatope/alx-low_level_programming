@@ -7,7 +7,5 @@
  */
 int _islower(int c)
 {
-  int c;
-  
   printf("Return value when %c is passed to islower(): %d", c, islower(c));
 }

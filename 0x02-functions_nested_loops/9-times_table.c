@@ -5,7 +5,7 @@
 #include <limits.h>
 /**
  * times_table - check the code
- * @c: is the digit whose last digit we are looking for
+ * is the digit whose last digit we are looking for
  * Return: last digit of a number
  */
 void times_table(void)

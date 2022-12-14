@@ -1,8 +1,8 @@
 #include "main.h"
 #include <unistd.h>
 /**
- * print_alphabet_x10 -  prints the alphabet, in lowercase
- * Description: followed by a new line.
+ * print_alphabet_x10 - prints the alphabet 10 times
+ * Description: prints each on separate lines
  * Return: 0.
  */
 

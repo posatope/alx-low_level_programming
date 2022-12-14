@@ -8,20 +8,33 @@
  * @c: is the digit whose last digit we are looking for
  * Return: last digit of a number
  */
-void times_table(void);
+void times_table(void)
 {
-	int y;
-	int z;
+	int i, j, res;
 
-	for (y=0; y<9; y++)
+	for (i = 0; i <= 9; i++)
 	{
-		for (z=0; z<9; z++)
+		for (j = 0; j <= 9; j++)
 		{
-			d = y * z;
+			res = (i * j);
+			if (j != 0)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
+			if (res >= 10)
+			{
+				_putchar((res / 10) + '0');
+				_putchar((res % 10) + '0');
+			}
+			else if (res < 10 && j != 0)
+			{
+				_putchar(' ');
+				_putchar((res % 10) + '0');
+			}
+			else
+				_putchar((res % 10) + '0');
 		}
-		_putchar(d + '0');
-		_putchar(',);			 
-			_putchar(' ');
-			 _putchar(' ');
-			 }
+		_putchar('\n');
+	}
 }

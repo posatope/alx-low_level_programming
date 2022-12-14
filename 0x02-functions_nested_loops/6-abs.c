@@ -13,5 +13,5 @@ int _abs(int c)
 	
 	f = abs(c);
 	printf("%d", f);
-	return (void);
+	return (f);
 }

@@ -2,6 +2,7 @@
 #include <ctype.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <limits.h>
 /**
  * print_last_digit - check the code
  * @c: is the digit whose last digit we are looking for

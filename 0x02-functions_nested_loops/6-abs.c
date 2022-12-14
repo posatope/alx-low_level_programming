@@ -12,6 +12,6 @@ int _abs(int c)
 	int f;
 	
 	f = abs(c);
-	_putchar('f');
+	_putchar("%d", f);
 	return (void);
 }

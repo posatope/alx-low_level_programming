@@ -15,7 +15,7 @@ int main(void)
 		i = j;
 		j = k;
 		printf("%lu", k);
-		if (count == 98)
+		if (count == 97)
 			putchar('\n');
 		else
 		{

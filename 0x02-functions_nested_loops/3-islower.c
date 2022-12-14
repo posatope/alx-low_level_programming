@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * _islower - check if int c is a lower case.
- * int c is the value being checked
+ * c - is the value being checked
  * Return: Always 0.
  */
 int _islower(int c)

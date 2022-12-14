@@ -12,8 +12,9 @@
  */
 void jack_bauer(void)
 {
-  time_t hh:mm;
+  time_t y;
+  time(&y);
   
-  if (hh:mm = 00:00; hh:mm <= 23:59: hh:mm++)
+  if (y = 00:00; y <= 23:59: y++)
     return (y);
 }

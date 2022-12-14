@@ -12,9 +12,8 @@
  */
 void jack_bauer(void)
 {
-  time_t y;
-  time(&y);
-  
-  if (y = 00:00; y <= 23:59: y++)
+  int y;
+    
+  for (y = 00; y < 60: y++)
     return (y);
 }

@@ -10,8 +10,7 @@
  */
 int print_last_digit(int c)
 {
-  int y;
-
+	int y;
   if (c == INT_MIN)
     y = 8;
   else

@@ -14,6 +14,6 @@ void jack_bauer(void)
 {
   int y;
     
-  for (y = 00; y < 60: y++)
+  for (y = 00; y < 60; y++)
     return (y);
 }

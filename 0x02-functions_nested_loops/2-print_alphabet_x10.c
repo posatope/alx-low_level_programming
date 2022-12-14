@@ -11,15 +11,15 @@ void print_alphabet_x10(void)
 	char i;
 
 	for (i = 'a'; i <= 'z'; i++)
-  print_alphabet(i);
-  print_alphabet(i);
-  print_alphabet(i);
-  print_alphabet(i);
-  print_alphabet(i);
-  print_alphabet(i);
-  print_alphabet(i);
-  print_alphabet(i);
-  print_alphabet(i);
-  print_alphabet(i);
-  _putchar('\n')
+		print_alphabet(i);
+	print_alphabet(i);
+	print_alphabet(i);
+	print_alphabet(i);
+	print_alphabet(i);
+	print_alphabet(i);
+	print_alphabet(i);
+	print_alphabet(i);
+	print_alphabet(i);
+	print_alphabet(i);
+	_putchar('\n')
 }

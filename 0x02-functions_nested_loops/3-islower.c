@@ -2,8 +2,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - check the code.
- *
+ * _islower - check if int c is a lower case.
+ * int c is the value being checked
  * Return: Always 0.
  */
 int _islower(int c)

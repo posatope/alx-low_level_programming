@@ -7,8 +7,8 @@ int main(void)
 {
 	unsigned long count, i, j, k;
 
-	i = 1;
-	j = 2;
+	i = 0;
+	j = 1;
 	for (count = 0; count < 98; count++)
 	{
 		k = i + j;

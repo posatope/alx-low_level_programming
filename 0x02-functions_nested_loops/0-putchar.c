@@ -5,7 +5,7 @@
  *
  * Return: Always 0.
  */
-int main()
+int main(void)
 {
   char c[8] = "_putchar";
   _putchar(c[8]);

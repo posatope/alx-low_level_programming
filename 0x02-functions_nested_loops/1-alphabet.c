@@ -3,7 +3,7 @@
 
 /**
  * main -  prints the alphabet, in lowercase
- * Description: It prints the word Holberton, followed by a new line.
+ * Description: followed by a new line.
  * Return: 0.
  */
 
@@ -16,3 +16,4 @@ int main(void)
 	_putchar('\n');
 
 	return (0);
+}

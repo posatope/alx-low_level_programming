@@ -13,4 +13,5 @@ int _abs(int c)
 	
 	f = abs(c);
 	_putchar(f);
+	return (0);
 }

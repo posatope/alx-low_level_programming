@@ -12,6 +12,6 @@ int _abs(int c)
 	int f;
 	
 	f = abs(c);
-	printf("%d", f);
+	_putchar(f)
 	return (0);
 }

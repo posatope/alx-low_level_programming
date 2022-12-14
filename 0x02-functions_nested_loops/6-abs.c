@@ -6,7 +6,7 @@
  * @c: is the value being checked
  * Return: 1 if it is a lowercase letter, 0 if it is not a lowercase letter.
  */
-int _abs(int)
+int _abs()
 {
 	int a;
 	

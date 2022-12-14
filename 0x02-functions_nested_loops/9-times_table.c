@@ -11,20 +11,17 @@
 void times_table(void);
 {
 	int y;
-  int z;
-  
-  for (y=0; y<9; y++)
-  {
-    
-	if (c == INT_MIN)
-	{
-	y = 8;
-	}
-	else
-	{
-	y = abs(c);
-	}
+	int z;
 
-	_putchar(y % 10 + '0');
-	return (y % 10);
+	for (y=0; y<9; y++)
+	{
+		for (z=0; z<9; z++)
+		{
+			d = y * z;
+		}
+		_putchar(d + '0');
+		_putchar(',);			 
+			_putchar(' ');
+			 _putchar(' ');
+			 }
 }

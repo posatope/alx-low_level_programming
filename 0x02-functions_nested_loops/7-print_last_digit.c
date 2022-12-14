@@ -11,11 +11,14 @@
 int print_last_digit(int c)
 {
 	int y;
-  if (c == INT_MIN)
-    y = 8;
-  else
-    y = abs(c);
-
-  _putchar(y % 10 + '0');
-  return (y % 10);
+	if (c == INT_MIN)
+	{
+		y = 8;
+	}
+	else
+	{
+		y = abs(c);
+	}
+	_putchar(y % 10 + '0');
+	return (y % 10);
 }

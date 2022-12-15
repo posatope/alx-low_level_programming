@@ -6,10 +6,8 @@
  * @b: number 2
  * return: multiplier.
  */
-int mul(int a, int b)
+int main(int a, int b)
 {
-	int x;
-	
-	x = a * b;
-	printf('%d', x);
+	return (a * b);
 }
+

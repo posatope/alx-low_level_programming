@@ -6,9 +6,8 @@
 
 void print_number(int n)
 {
-    int a;
-	
-	for (a = 0; a <= 9; a++)
+	int a;
+	for (; a == n;)
 	{
 	    _putchar(a + '0');
 	}

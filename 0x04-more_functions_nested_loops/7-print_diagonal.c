@@ -18,9 +18,9 @@
 	{
 		for (b=1; b < a; b++)
 		{
-				putchar(' ');
+			_putchar(' ');
 		}
-	putchar('\\');
-	putchar('\n');
+	_putchar('\\');
+	_putchar('\n');
 	}
 }

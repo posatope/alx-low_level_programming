@@ -3,10 +3,10 @@
 #include <ctype.h>
 /**
  * print_diagonal - check the code
- * @n: number 
+ * @n: number
  * Return: Always 0.
  */
- void print_diagonal(int n)
+void print_diagonal(int n)
 {
 	int a, b;
 
@@ -15,13 +15,13 @@
 		_putchar('\n');
 	}
 	else
-		for(a = 1; a <= n; a++)
+		for (a = 1; a <= n; a++)
 		{
-			for (b=1; b < a; b++)
+			for (b = 1; b < a; b++)
 			{
 				_putchar(' ');
 			}
 			_putchar('\\');
 			_putchar('\n');
 		}
- }
+}

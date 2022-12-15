@@ -9,7 +9,7 @@
 
 void print_number(int n)
 {
-	len, res, i, temp, expo;
+	int len, res, i, temp, expo;
 
 	res = n;
 	expo = len =  1;

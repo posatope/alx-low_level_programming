@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
+#include "main.h"
 /**
  * print_line - check the code
  * @n: the number processed

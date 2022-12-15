@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_most_numbers - check the code
+ * print_most_numbers - check the codes
  *
  * Return: Always 0.
  */
@@ -17,8 +17,8 @@ void print_most_numbers(void)
 	}
 	else
 	{
-	    putchar(a + '0');
+	    _putchar(a + '0');
 	}
 	}
-	putchar('\n');
+	_putchar('\n');
 }

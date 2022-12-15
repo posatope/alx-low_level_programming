@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include <stdio.h>
+#include <ctype.h>
 /**
  * print_diagonal - check the code
  * @n: number 
@@ -11,7 +12,7 @@
 
 	if (n <= 0)
 	{
-	    putchar('\n');
+	    _putchar('\n');
 	}
 	else 
 	for(a = 1; a <= n; a++) 

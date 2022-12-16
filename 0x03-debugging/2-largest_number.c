@@ -8,22 +8,22 @@
  * @c: third integer
  * Return: largest number
  */
-
 int largest_number(int a, int b, int c)
 {
-	int large;
+	int largest;
 
-	if (a > b && a > c)
+	if (a >= b && a >= c)
 	{
-		large = a;
+		largest = a;
 	}
-	else if (b > a && b > c)
+	else if (b >= a && b >= c)
 	{
-		large = b;
+		largest = b;
 	}
-	else if (c > a && c > b)
+	else
 	{
-		large = c;
+		largest = c;
 	}
-	return (large);
+
+	return (largest);
 }

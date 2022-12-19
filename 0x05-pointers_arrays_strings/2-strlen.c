@@ -15,4 +15,5 @@ int _strlen(char *s)
 	
 	z = strlen(s);
 	_putchar(z + '0');
+	Return(0);
 }

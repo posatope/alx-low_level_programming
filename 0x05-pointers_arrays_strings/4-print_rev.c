@@ -9,7 +9,6 @@
 void print_rev(char *s)
 {
 	int n = strlen(s);
-	int i;
 
 	if (n == 0)
 	{
@@ -18,7 +17,7 @@ void print_rev(char *s)
 	else
 	{
 		{
-			_putchar(s[i--]);
+			_putchar(s[n--]);
 		}
 		_putchar('\n');
 	}

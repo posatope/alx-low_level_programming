@@ -19,8 +19,8 @@ void print_rev(char *s)
 	{
 		for (i = 0; i <= n; i++)
 		{
-			printf("%c\n", s[n - i]);
+			printf("%c", s[n - i]);
 		}
-		
+		_putchar('\n');
 	}
 }

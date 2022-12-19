@@ -11,9 +11,9 @@
  */
 int _atoi(char *s)
 {
-    int val;
-
-    val = atoi(s);
-    _putchar(val +'0');
-    return(0);
+	signed val;
+	
+	val = atoi(s);
+	printf ("%d", val);
+	return(0);
 }

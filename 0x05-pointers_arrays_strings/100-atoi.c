@@ -16,7 +16,7 @@ int val;
 
    strcpy(str, s);
    val = atoi(str);
-   printf("String value = %s, Int value = %d\n", str, val);
+   printf("%d", val);
 
    return(0);
 }

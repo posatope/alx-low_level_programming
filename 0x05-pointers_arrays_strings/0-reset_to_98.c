@@ -5,8 +5,8 @@
 #include "main.h"
 #include <unistd.h>
 /**
- * _atoi - prints the alphabet 10 times
- * @*s: prints each on separate lines
+ * reset_to_98 - prints the alphabet 10 times
+ * @*n: prints each on separate lines
  * Return: 0.
  */
 void reset_to_98(int *n)

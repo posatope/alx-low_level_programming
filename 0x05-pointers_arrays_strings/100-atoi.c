@@ -11,7 +11,7 @@
  */
 int _atoi(char s)
 {
-	signed val;
+	int val;
 	
 	val = atoi(s);
 	printf ("%d", val);

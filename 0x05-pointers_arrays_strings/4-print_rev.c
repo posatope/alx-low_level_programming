@@ -12,10 +12,14 @@ void print_rev(char *s)
 	int i;
 
 	if (n == 0)
+	{
 		break;
+	}
 	else
+	{
 		for (i = 0; i <= n; i++)
 		{
 			_putchar(s[n - i]);
 		}
+	}
 }

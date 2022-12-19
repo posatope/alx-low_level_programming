@@ -11,11 +11,13 @@
  */
 int _atoi(char *s)
 {
-   int val;
-   signed char str;
-
-   strcpy(str, s);
-   val = atoi(str);
-   printf("%d", val);
-   return(0);
+    int val;
+    char str;
+    int i;
+    
+    i = 0;
+    str = s[i];
+    val = atoi("str");
+    printf("%d", val);
+    return(0);
 }

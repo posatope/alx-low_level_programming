@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
-#include <iostream>
+#include <stdlib.h>
+#include <ctype.h>
 #include <cstring>
 
 /**
@@ -13,5 +14,5 @@ int _strlen(char *s)
 	int z;
 	
 	z = strlen(s);
-	_putchar(z + '0')
+	_putchar(z + '0');
 }

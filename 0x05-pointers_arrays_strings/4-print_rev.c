@@ -19,9 +19,11 @@ void print_rev(char *s)
 	{
 		for (i = 0; i <= n; i++)
 		{
-			while ((n - i) != 0)
+			if ((n -i) > 0)
 				_putchar(s[n - i]);
+			else
+				_putchar('\n');
 		}
-		_putchar('\n');
+		
 	}
 }

@@ -2,9 +2,10 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * swap_int - check the code
+ * @a: first number
+ * @b: second number 
+ * Return: No return.
  */
 void swap_int(int *a, int *b)
 {

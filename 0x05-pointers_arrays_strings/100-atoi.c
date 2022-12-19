@@ -16,6 +16,6 @@ int _atoi(char *s)
 
    strcpy(str, s);
    val = atoi(str);
-   _putchar(val + "0");
+   printf(%d, val);
    return(0);
 }

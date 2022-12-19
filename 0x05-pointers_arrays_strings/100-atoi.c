@@ -14,6 +14,6 @@ int _atoi(char *s)
     int val;
 
     val = atoi(s);
-    _putchar(val + "0");
+    _putchar(val +'0');
     return(0);
 }

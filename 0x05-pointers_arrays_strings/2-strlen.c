@@ -15,4 +15,5 @@ int _strlen(char *s)
 	
 	z = strlen(s);
 	printf("%d", z);
+	return (z);
 }

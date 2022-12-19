@@ -1,5 +1,7 @@
 #include "main.h"
 #include <stdio.h>
+#include <iostream>
+#include <cstring>
 
 /**
  * _strlen - check the code

@@ -17,10 +17,10 @@ void print_rev(char *s)
 	}
 	else
 	{
-		for (i = 0; i < n; i++)
+		for (; i = n; i--)
 		{
-			printf("%c", s[n - i]);
+			printf("%c", s[i]);
 		}
-		_putchar('\n');
+	_putchar('\n');
 	}
 }

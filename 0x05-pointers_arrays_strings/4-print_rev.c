@@ -9,6 +9,7 @@
 void print_rev(char *s)
 {
 	int n = strlen(s);
+	int i;
 	
 	for (int i = 0; i < n / 2; i++)
 	{

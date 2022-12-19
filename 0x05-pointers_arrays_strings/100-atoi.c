@@ -17,7 +17,7 @@ int _atoi(char *s)
     
     i = 0;
     str = s[i];
-    val = atoi("str");
+    val = atoi'str');
     printf("%d", val);
     return(0);
 }

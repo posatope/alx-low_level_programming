@@ -2,8 +2,8 @@
 #include<stdio.h>
 #include <string.h>
 /**
- * main - check the code
- *
+ * _puts - check the code
+ * @str: string
  * Return: Always 0.
  */
 void _puts(char *str)

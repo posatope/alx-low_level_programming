@@ -9,7 +9,7 @@
  * @*s: prints each on separate lines
  * Return: 0.
  */
-int _atoi(char *s)
+int _atoi(char s)
 {
 	signed val;
 	

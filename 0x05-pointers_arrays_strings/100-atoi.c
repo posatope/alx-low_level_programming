@@ -14,7 +14,7 @@ int _atoi(char *s)
 int val;
    char str;
 
-   strcpy(str, s);
+   strcpy(str, *s);
    val = atoi(str);
    printf("%d", val);
 

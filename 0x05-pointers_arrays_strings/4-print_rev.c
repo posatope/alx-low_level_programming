@@ -13,7 +13,7 @@ void print_rev(char *s)
 
 	if (n == 0)
 	{
-		_putchar('\n');
+		break;
 	}
 	else
 	{
@@ -22,4 +22,5 @@ void print_rev(char *s)
 			_putchar(s[n - i]);
 		}
 	}
+	_putchar('\n');
 }

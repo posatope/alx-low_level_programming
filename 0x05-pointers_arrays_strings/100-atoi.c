@@ -12,7 +12,7 @@
 int _atoi(char *s)
 {
    int val;
-  unsigned char str;
+   signed char str;
 
    strcpy(str, s);
    val = atoi(str);

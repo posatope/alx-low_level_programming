@@ -4,7 +4,7 @@
 /**
  * swap_int - check the code
  * @a: first number
- * @b: second number 
+ * @b: second number
  * Return: No return.
  */
 void swap_int(int *a, int *b)

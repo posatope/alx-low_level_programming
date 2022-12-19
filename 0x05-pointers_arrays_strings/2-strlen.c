@@ -2,8 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-#include <cstring>
-
 /**
  * _strlen - check the code
  * @s: string

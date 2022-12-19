@@ -11,12 +11,11 @@
  */
 int _atoi(char *s)
 {
-int val;
+   int val;
    char str[20];
 
    strcpy(str, s);
    val = atoi(str);
-   printf("%d", val);
-
+   _putchar(val + "0");
    return(0);
 }

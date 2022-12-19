@@ -12,16 +12,17 @@ void print_rev(char *s)
 	int i;
 
 	while (s[i] != '\0')
+	{
 		i++;
-	if (n == 0)
-	{
-		_putchar('\n');
 	}
-	else
-	{
+	i--;
+	while (s[i] != '\0')
 		for (i = n; i >= 0; i--)
 		{
 			printf("%c", s[i]);
 		}
+	if (n == 0)
+	{
+		_putchar('\n');
 	}
 }

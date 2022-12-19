@@ -8,19 +8,13 @@
  */
 void rev_string(char *s)
 {
-	int n = strlen(s);
-	int i;
+	int c;
 
-	if (n == 0)
+	for (c = 0; s[c] != 0; c++)
 	{
-		_putchar('\n');
 	}
-	else
-	{
-		for (i = 0; i <= n; i++)
-		{
-			_putchar(s[n - i]);
-		}
-		_putchar('\n');
-	}
+	for (c = c - 1; c >= 0; c--)
+		_putchar(s[c]);
+	_putchar('\n');
+
 }

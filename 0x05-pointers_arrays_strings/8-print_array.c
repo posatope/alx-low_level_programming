@@ -9,7 +9,7 @@
  */
 void print_array(int *a, int n)
 {
-	int j[i];
+	int j[int i];
 	
 	j[i] = a[n];
 	for ( i = 0; i <= n; i++)

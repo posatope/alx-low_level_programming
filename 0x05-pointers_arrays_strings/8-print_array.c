@@ -9,9 +9,10 @@
  */
 void print_array(int *a, int n)
 {
-	int j[int i];
+	int i;
 	
-	j[i] = a[n];
+	
+	int j[i] = a[n];
 	for ( i = 0; i <= n; i++)
 		printf("%d, ", j[i]);
 	_putchar('\n');		

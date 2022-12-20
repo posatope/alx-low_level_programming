@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * _strcpy - check the code
- * @dest: character
- * @src: second char
+ * print_array - check the code
+ * @a: character
+ * @n: second char
  * Return: Always 0.
  */
 void print_array(int *a, int n)

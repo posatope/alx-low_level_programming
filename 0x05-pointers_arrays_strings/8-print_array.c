@@ -9,11 +9,16 @@
  */
 void print_array(int *a, int n)
 {
-	int j[20];
-	int i
+	int i;
 
-	j[i] = a[n];
-	for (i = 0; i <= n; i++)
-		printf("%d, ", j[i]);
-	_putchar('\n');		
+	i = 0;
+	while (i < n)
+	{
+		if (i != n - 1)
+			printf("%d, ", a[i]);
+		else
+			printf("%d", a[i]);
+		i++;
+	}
+	_putchar('\n');
 }

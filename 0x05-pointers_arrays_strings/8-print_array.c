@@ -11,7 +11,7 @@ void print_array(int *a, int n)
 {
 	int j[20];
 
-	j = a[n]
+	j = a[n];
 	for (n = 0;; n++)
 		printf("%d, ", j[n]);
 	_putchar('\n');		

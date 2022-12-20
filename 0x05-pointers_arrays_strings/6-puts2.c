@@ -13,9 +13,11 @@ void puts2(char *str)
 
 	for (c = 0; str[c] != 0; c++)
 	{
-		while (c % 2 == 0)
+		if (c % 2 == 0)
+		{
 			a = str [c];
-		_putchar(a);
+			_putchar(a);
+		}
 	}
 	_putchar('\n');
 }

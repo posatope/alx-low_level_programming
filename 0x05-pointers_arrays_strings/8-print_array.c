@@ -16,7 +16,7 @@ void print_array(int *a, int n)
 	{
 		printf("%d, ", a[i]);
 	}
-	for (i > n - 2 && i < n)
+	if (i > n - 2 && i < n)
 	{
 		printf("%d ", a[i]);
 	}

@@ -6,14 +6,14 @@
 #include <unistd.h>
 /**
  * _atoi - prints the alphabet 10 times
- * @*s: prints each on separate lines
+ * @s: prints each on separate lines
  * Return: 0.
  */
 int _atoi(char *s)
 {
 	int val;
-	
+
 	val = atoi(s);
-	printf ("%d", val);
-	return(0);
+	printf("%d", val);
+	return (0);
 }

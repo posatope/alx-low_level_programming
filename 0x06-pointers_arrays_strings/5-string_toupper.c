@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h> 
+#include <stdbool.h>
 
 /**
  * string_toupper - check the code

@@ -4,9 +4,7 @@
 
 /**
  * _strncpy - check the code
- * @dest: char 1
- * @src: char 2
- * @n: int size
+ * @temp: char 1
  * Return: Always 0.
  */
 char *string_toupper(char *temp)

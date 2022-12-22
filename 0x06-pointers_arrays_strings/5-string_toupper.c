@@ -11,6 +11,7 @@
  */
 char *string_toupper(char *str)
 {
-	*str = strupr(str);
-	return (str);
+	for (int i = 0; i <= strlen(str); i++) 
+		putchar(toupper(str[i]));
+	return 0;
 }

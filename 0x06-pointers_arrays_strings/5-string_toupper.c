@@ -4,8 +4,8 @@
 #include <ctype.h> 
 
 /**
- * _strncpy - check the code
- * @temp: char 1
+ * string_toupper - check the code
+ * @str: char 1
  * Return: Always 0.
  */
 char *string_toupper(char *str)

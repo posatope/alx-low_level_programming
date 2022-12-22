@@ -8,11 +8,10 @@
  * @temp: char 1
  * Return: Always 0.
  */
-char *string_toupper(char *)
+char *string_toupper(char *str)
 {
 	int i = 0;
-	char str[];
-	
+
 	while(str[i])
 	{
 		_putchar (toupper(str[i]));

@@ -4,15 +4,14 @@
 
 /**
  * _strncpy - check the code
- * @dest: char 1
- * @src: char 2
- * @n: int size
+ * @s1: char 1
+ * @s2: char 2
  * Return: Always 0.
  */
 int _strcmp(char *s1, char *s2)
 {
 	int x;
-	
+
 	x = strcmp(s1, s2);
 	return (x);
 }

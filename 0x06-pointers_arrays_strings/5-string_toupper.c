@@ -10,12 +10,6 @@
  */
 char *string_toupper(char *str)
 {
-  int i = 0;
-    
-  while (str[i])
-    {
-      *str = toupper (str[i]);
-      i++;
-    }
-  return (str);
+	*str = strupr(str));
+	return (str);
 }

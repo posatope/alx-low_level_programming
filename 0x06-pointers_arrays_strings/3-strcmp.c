@@ -15,4 +15,5 @@ int _strcmp(char *s1, char *s2)
 	
 	x = strcmp(s1, s2); 
 	printf("%d", x);
+	return (x);
 }

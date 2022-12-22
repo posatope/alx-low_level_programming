@@ -14,7 +14,7 @@ char *string_toupper(char *str)
 
 	while(str[i])
 	{
-		printf("%s", toupper(str[i]));
+		printf("%d", toupper(str[i]));
 		i++;
 	}
 	return(0);

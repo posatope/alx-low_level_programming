@@ -19,7 +19,7 @@ char *string_toupper(char *str)
 		*str = toupper(str[i]);
 		_putchar (*str);
 		i++;
-		y = str;
+		*y = str;
 	}
-	return y;
+	return *y;
 }

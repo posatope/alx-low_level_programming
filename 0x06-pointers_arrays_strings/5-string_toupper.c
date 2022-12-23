@@ -12,7 +12,6 @@
 char *string_toupper(char *str)
 {
 	int i = 0;
-	char *y;
 	
 	while (str[i])
 	{

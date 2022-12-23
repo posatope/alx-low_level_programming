@@ -17,9 +17,7 @@ char *string_toupper(char *str)
 	while (str[i])
 	{
 		*str = toupper(str[i]);
-		putchar (*str);
 		i++;
-		y = str;
 	}
-	return y;
+	return str;
 }

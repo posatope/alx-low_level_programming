@@ -12,14 +12,14 @@
 char *string_toupper(char *str)
 {
 	int i = 0;
-	char y
+	char y;
 	
 	while (str[i])
 	{
 		*str = toupper(str[i]);
 		_putchar (*str);
 		i++;
-		y = *str
+		y = *str;
 	}
 	return y;
 }

@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * _strncpy - check the code
+ * _strncmp - check the code
  * @s1: char 1
  * @s2: char 2
  * Return: Always 0.

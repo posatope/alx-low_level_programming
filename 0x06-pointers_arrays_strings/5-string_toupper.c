@@ -21,5 +21,5 @@ char *string_toupper(char *str)
 		i++;
 		y = *str;
 	}
-	return *y;
+	return y;
 }

@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
-#include <ctype.h> 
+#include <ctype.h>
 #include <stdbool.h>
 /**
  * cap_string - capitalizes all words of a string.

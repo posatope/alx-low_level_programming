@@ -13,7 +13,7 @@ void rev_string(char *s)
 
 	for (c = 0; s[c] != 0; c++)
 	{
-		continue;
+		_putchar('\n');
 	}
 	for (a = 0; a <= c; a++)
 		_putchar(s[c - a]);

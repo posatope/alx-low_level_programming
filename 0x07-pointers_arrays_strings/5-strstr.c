@@ -13,6 +13,6 @@ har *_strstr(char *haystack, char *needle)
 {
 	char *t;
 
-	t = _strstr(haystack, needle);
+	t = strstr(haystack, needle);
 	return (t);
 }

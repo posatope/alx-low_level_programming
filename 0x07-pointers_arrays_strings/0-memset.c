@@ -16,5 +16,5 @@ char *_memset(char *s, char b, unsigned int n)
 	
 	d = &*s;
 	memset(d, b, n);
-	_putchar(*s);
+	return (s);
 }

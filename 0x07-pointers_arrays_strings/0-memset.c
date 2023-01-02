@@ -12,5 +12,6 @@
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	memset(void *s, b, n);
+	memset(*s, b, n);
+	_putchar(*s);
 }

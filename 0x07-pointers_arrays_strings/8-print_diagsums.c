@@ -12,6 +12,7 @@
 void print_diagsums(int *a, int size)
 {
 	int i, j, sum = 0;
+	int mat[size][size] = a;
 
 	for (i = 0; i < size; i++)
 	{
@@ -19,7 +20,7 @@ void print_diagsums(int *a, int size)
 		{
 			if(i == j)
 			{
-				sum = sum + a[i][j];
+				sum = sum + mat[i][j];
 			}
 		}		
 	}

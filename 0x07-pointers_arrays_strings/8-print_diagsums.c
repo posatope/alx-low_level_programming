@@ -12,13 +12,13 @@
 void print_diagsums(int *a, int size)
 {
 	int i, j, sum = 0;
-	int mat[100][100];
+	int mat[i][j];
 
 	for (i = 0; i < size; i++)
 	{
 		for (j = 0; j < size; j++)
 		{
-			mat [100][100] = *a;
+			mat [i][j] = *a;
 			if(i == j)
 			{
 				sum = sum + mat[i][j];

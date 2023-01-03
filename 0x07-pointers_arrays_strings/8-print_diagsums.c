@@ -18,9 +18,10 @@ void print_diagsums(int *a, int size)
 	{
 		for (j = 0; j < size; j++)
 		{
+			mat [i][j] = *a;
 			if(i == j)
 			{
-				mat [i][j] = *a;
+				
 				sum = sum + mat[i][j];
 			}
 		}		

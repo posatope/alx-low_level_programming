@@ -21,7 +21,7 @@ void print_diagsums(int *a, int size)
 		{
 			if(i == j)
 			{
-				sum = sum + a[i][j];
+				sum = sum + mat[i][j];
 			}
 		}		
 	}

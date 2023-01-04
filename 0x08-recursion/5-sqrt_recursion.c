@@ -8,7 +8,7 @@
  * @d: root
  * Return: Always 0.
  */
-void findsqr(int n, int d)
+int findsqr(int n, int d)
 {
     if (d == n)
     return (0);
@@ -28,6 +28,7 @@ void findsqr(int n, int d)
             return (d);
         }
     }
+	return (0);
 }
 /**
  * _sqrt_recursion - check the code

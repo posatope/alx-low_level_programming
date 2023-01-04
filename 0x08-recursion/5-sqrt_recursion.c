@@ -1,8 +1,10 @@
 #include "main.h"
 #include <stdio.h>
+#include <math.h>
+#include <ctype.h>
 /**
- * main - check the code
- *
+ * _sqrt_recursion - check the code
+ * @n: number
  * Return: Always 0.
  */
 int _sqrt_recursion(int n)

@@ -8,7 +8,7 @@
  * @d: root
  * Return: Always 0.
  */
-int findsqr(int n, int d)
+void findsqr(int n, int d)
 {
     if (d == n)
     return (0);

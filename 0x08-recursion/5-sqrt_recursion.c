@@ -10,24 +10,23 @@
  */
 int findsqr(int n, int d)
 {
-    if (d == n)
-    return (0);
-    if (n / d != d)
-    {
-        return(findsqr(n, d + 1));
-    }
-    else if (n / d == d && d< n)
-    {
-        if (n % d != 0)
-        {
-            putchar('-');
-            return (1);
-        }
-        else
-        {
-            return (d);
-        }
-    }
+	if (n / d != d)
+	{
+		return(findsqr(n, d + 1));
+	}
+	else if (n / d == d && d< n)
+	{
+		if (n % d != 0)
+		{
+			_putchar('-');
+			return (1);
+		}
+		else
+		{
+			return (d);
+		}
+	}
+	else
 	return (0);
 }
 /**
@@ -37,17 +36,17 @@ int findsqr(int n, int d)
  */
 int _sqrt_recursion(int n)
 {
-    if (n < 0)
-    {
-        putchar('-');
+	if (n < 0)
+	{
+		_putchar('-');
 		return (1);
-    }
-    else if (n == 1)
-    {
+	}
+	else if (n == 1)
+	{
 		return (n);
-    }
-    else
-    {
-        return (findsqr(n, 1));
-    }
+	}
+	else
+	{
+		return (findsqr(n, 1));
+	}
 }

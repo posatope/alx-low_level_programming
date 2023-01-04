@@ -11,12 +11,7 @@
  */
 int findsqr(int n, int d)
 {
-    int k, g;
-
-    k = n / d;
-    g = n % d;
-    
-    if (n / d == d)
+	if (n / d == d)
     {
         if (n % d != 0)
         {
@@ -38,7 +33,6 @@ int _sqrt_recursion(int n)
 {
     int y;
     
-    n = 16;
     if (n < 0)
     {
         putchar('-');

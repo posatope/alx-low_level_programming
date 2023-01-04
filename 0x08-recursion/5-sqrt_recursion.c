@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 #include <math.h>
 #include <ctype.h>
 #include <stdio.h>
@@ -11,18 +10,24 @@
  */
 int findsqr(int n, int d)
 {
-	if (n / d == d)
+    if (d == n)
+    return (0);
+    if (n / d != d)
+    {
+        return(findsqr(n, d + 1));
+    }
+    else if (n / d == d && d< n)
     {
         if (n % d != 0)
         {
             putchar('-');
-            putchar(1 + '0');
+            return (1);
         }
         else
-        putchar(d + '0');
+        {
+            return (d);
+        }
     }
-    else
-        return findsqr(n, d + 1);
 }
 /**
  * _sqrt_recursion - check the code
@@ -31,14 +36,17 @@ int findsqr(int n, int d)
  */
 int _sqrt_recursion(int n)
 {
-    int y;
-    
     if (n < 0)
     {
         putchar('-');
-		putchar(1 + '0');
+		return (1);
+    }
+    else if (n == 1)
+    {
+		return (n);
     }
     else
-    findsqr(n, 1);
-    return (0);
+    {
+        return (findsqr(n, 1));
+    }
 }

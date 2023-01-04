@@ -4,34 +4,47 @@
 #include <ctype.h>
 #include <stdio.h>
 /**
- * main - check the code
- *
+ * findsqr - to loop without loop
+ * @n: number to squareroot
+ * @d: root
+ * Return: Always 0.
+ */
+int findsqr(int n, int d)
+{
+    int k, g;
+
+    k = n / d;
+    g = n % d;
+    
+    if (n / d == d)
+    {
+        if (n % d != 0)
+        {
+            putchar('-');
+            putchar(1 + '0');
+        }
+        else
+        putchar(d + '0');
+    }
+    else
+        return findsqr(n, d + 1);
+}
+/**
+ * _sqrt_recursion - check the code
+ * @n: number to squareroot
  * Return: Always 0.
  */
 int _sqrt_recursion(int n)
 {
-    int d;
-
+    int y;
+    
+    n = 16;
     if (n < 0)
     {
         putchar('-');
-		return (1);
+		putchar(1 + '0');
     }
     else
-    d = 1;
-    while (d < n)
-    {
-        if (n / d == d)
-        {
-            if (n % d != 0)
-            {
-                putchar('-');
-                return (1);
-            }
-            else
-            return (d);
-        }
-        d++;
-    }
-    return (d);
+    findsqr(n, 1);
+    return (0);
 }

@@ -12,9 +12,9 @@ int findsqr(int n, int d)
 {
 	if (n / d != d)
 	{
-		return(findsqr(n, d + 1));
+		return (findsqr(n, d + 1));
 	}
-	else if (n / d == d && d< n)
+	else if (n / d == d && d < n)
 	{
 		if (n % d != 0)
 		{

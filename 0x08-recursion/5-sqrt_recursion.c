@@ -2,22 +2,36 @@
 #include <stdio.h>
 #include <math.h>
 #include <ctype.h>
+#include <stdio.h>
 /**
- * _sqrt_recursion - check the code
- * @n: number
+ * main - check the code
+ *
  * Return: Always 0.
  */
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
-	{
-		putchar('-');
+    int d,y;
+
+    if (n < 0)
+    {
+        putchar('-');
 		return (1);
-	}
-	if (remainder(sqrt(n), 1) != 0)
-	{
-		putchar('-');
-		return (1);
-	}
-	return (sqrt(n));
+    }
+    else
+    d = 1;
+    while (d < n)
+    {
+        if (n / d == d)
+        {
+            if (n % d != 0)
+            {
+                putchar('-');
+                return (1);
+            }
+            else
+            return (d);
+        }
+        d++;
+    }
+    return (d);
 }

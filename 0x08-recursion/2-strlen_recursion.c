@@ -8,8 +8,7 @@
  */
 int _strlen_recursion(char *s)
 {
-	int length = printf("%s", s);
+	int length = printf("%s\n", s);
 
-	printf("%d", length);
-	return (0);
+	return (length);
 }

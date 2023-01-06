@@ -4,8 +4,8 @@
  *
  * Return: Always 0.
  */
-int main(void)
+int main(int argc, char *argv[])
 {
-	printf("%s", __FILE__);
+	printf("%s", argv[0]);
 	return (0);
 }

@@ -7,9 +7,9 @@
  * @argv: argument vectors
  * Return: 0 on success
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	while (argc--)
-		printf("%d\n", argc);
+	printf("%d\n", argc);
+	argc[0] = 0
 	return (0);
 }

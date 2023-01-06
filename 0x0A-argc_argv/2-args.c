@@ -10,5 +10,5 @@ int main(int argc, char **argv)
 {
 	while(argc--)
 		printf("%s\n", *argv++);
-	Return (0);
+	return (0);
 }

@@ -8,10 +8,10 @@
  */
 int main(int argc, char *argv[])
 {
-	char c = Error;
+	char c = 'Error';
 	int d;
 	
-	arg--;
+	argc--;
 	if (argc < 2)
 		printf("%s\n", c);
 		return (1);

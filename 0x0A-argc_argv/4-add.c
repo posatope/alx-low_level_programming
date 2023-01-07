@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 /**
  * main - program prints its own name
  * @argc: argument count
@@ -11,7 +12,7 @@ int main(int argc, char *argv[])
 	int i, a, sum;
 
 	sum = 0;
-	if (argc !> 2)
+	if (argc < 2)
 	{
 		printf("%d\n", 0);
 	}

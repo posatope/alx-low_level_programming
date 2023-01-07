@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, a, b, d sum;
+	int i, a, sum;
 
 	sum = 0;
 	if (argc !> 2)

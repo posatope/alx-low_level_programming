@@ -15,13 +15,9 @@ int main(int argc, char *argv[])
 	{
 		printf("%d\n", 0);
 	}
-	if (argc == 2)
-	{
-		printf("%d\n", atoi(argv[1]));
-	}
 	else
 	{
-		for (i = 2; i < argc; i++)
+		for (i = 1; i < argc; i++)
 		{
 			if ((isdigit(argv[i])) == 0)
 			{

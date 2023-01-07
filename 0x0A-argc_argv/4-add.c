@@ -8,8 +8,9 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, a, b, d;
+	int i, a, b, d sum;
 
+	sum = 0;
 	if (argc !> 2)
 	{
 		printf("%d\n", 0);
@@ -22,14 +23,15 @@ int main(int argc, char *argv[])
 	{
 		for (i = 2; i < argc; i++)
 		{
+			if ((isdigit(argv[i])) == 0)
+			{
+				printf("Error\n");
+				return (1);
+			}
 			a = atoi(argv[i]);
 			sum += a;
 			printf("%d\n", sum);
-			
-		
-		b = atoi(argv[2]);
-		d = a * b;
-		
+		}
 	}
 	return (0);
 }

@@ -6,14 +6,13 @@
  * @argv: argument vectors
  * Return: 0 on success
  */
-int main(int argc, char *argv[])
+int main(int argc, int *argv[])
 {
-	char c = 'Error';
 	int d;
 	
 	argc--;
 	if (argc < 2)
-		printf("%s\n", c);
+		printf("Error%s\n");
 		return (1);
 	else if (argc ==3)
 		d = argv[1] * argv[2];

@@ -8,8 +8,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int d;
-	
+	int a,b,d;
+
 	argc--;
 	if (argc < 2)
 	{
@@ -18,7 +18,9 @@ int main(int argc, char *argv[])
 	}
 	else if (argc ==3)
 	{
-		d = int argv[1] * int argv[2];
+		a = (int)(argv[1]);
+		b = (int)(argv[2]);
+		d = a * b;
 		printf("%d\n", d);
 	}
 	return (0);

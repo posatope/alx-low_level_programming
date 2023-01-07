@@ -8,7 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	char c = "Error"
+	char c = "Error";
 	int d;
 	
 	arg--;

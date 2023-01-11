@@ -1,7 +1,23 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
+/**
+ * findij - prints buffer in hexa
+ * @s1: the address of memory to print
+ * @i: the address of memory to print
+ * Return: Nothing.
+ */
+int findij(char *s1, int i)
+{
+	if (s1 == NULL)
+		i = 0;
+	else
+	{
+		for (i = 0; s1[i] != '\0'; i++)
+			;
+		i++;
+	}
+}
 /**
  * str_concat - prints buffer in hexa
  * @s1: the address of memory to print
@@ -12,23 +28,9 @@ char *str_concat(char *s1, char *s2)
 {
 	char *s;
 	int i, j;
-
-	if (s1 == NULL)
-		i = 0;
-	else
-	{
-		for (i = 0; s1[i] != '\0'; i++)
-			;
-		i++;
-	}
-	if (s2 == NULL)
-		j = 0;
-	else
-	{
-		for (j = 0; s2[j] != '\0'; j++)
-			;
-		j++;
-	}
+	
+	i = findij(s1, i);
+	j = findij(s2, j);
 	s = malloc((i + j) * sizeof(char));
 	if (s == NULL)
 		return (NULL);

@@ -17,6 +17,7 @@ int findij(char *s1, int i)
 			;
 		i++;
 	}
+	return (i);
 }
 /**
  * str_concat - prints buffer in hexa

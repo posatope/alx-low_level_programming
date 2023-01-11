@@ -10,21 +10,26 @@
  */
 int **alloc_grid(int width, int height)
 {
-	char *s;
+	int **s;
 	int i, j;
 
-	if (width == 0 !! height == 0)
-		return (NULL);
+	if (width == 0)
+	{
+	    return (NULL);
+	}
 	else
 	{
-		for (i = 0; s1[i] != '\0'; i++)
+		for (i = 0; i < height; i++)
 			;
 		i++;
 	}
-	
+	if (height == 0)
+	{
+		return (NULL);
+	}
 	else
 	{
-		for (j = 0; s2[j] != '\0'; j++)
+		for (j = 0; j < width; j++)
 			;
 		j++;
 	}
@@ -32,22 +37,13 @@ int **alloc_grid(int width, int height)
 	if (s == NULL)
 		return (NULL);
 	i = 0;
-	if (s1 == NULL)
-		i = 0;
-	else
-	while (s1[i] != '\0')
+	for (i = 0; i < height; i++)
 	{
-		s[i] = s1[i];
-		i++;
-	}
-	j = 0;
-	if (s2 == NULL)
-		;
-	else
-	while (s2[j] != '\0')
-	{
-		s[i + j] = s2[j];
-		j++;
+		j = 0;
+		for (j = 0; j < width; j++)
+		{
+			s[i][j] = 0;
+		}
 	}
 	return (s);
 }

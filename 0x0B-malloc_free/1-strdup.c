@@ -19,7 +19,7 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		while (i < size)
+		while (1)
 		{
 			if (s == NULL)
 			{

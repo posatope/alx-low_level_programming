@@ -27,10 +27,6 @@ char *_strdup(char *str)
 		free(s);
 		return (NULL);
 	}
-	while (i > 0)
-	{
-		s[i] = str[i];
-		i++;
-	}
+	s[i] = str[i];
 	return (s);
 }

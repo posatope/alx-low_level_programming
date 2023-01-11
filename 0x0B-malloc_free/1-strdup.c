@@ -12,19 +12,16 @@ char *_strdup(char *str)
 {
 	char *s;
 
-	s = malloc(sizeof(str));
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	else
+	s = malloc(sizeof(str));
+	if (s == NULL)
 	{
-		if (s == NULL)
-		{
-			return (NULL);
-		}
-		s = str;
-		free (s);
+		free(s);
+		return (NULL);
 	}
+	s = str;
 	return (s);
 }

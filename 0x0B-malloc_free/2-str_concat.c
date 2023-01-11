@@ -21,12 +21,18 @@ char *str_concat(char *s1, char *s2)
 	j++;
 	s = malloc((i + j) * sizeof(char));
 	i = 0;
+	if (s1 == NULL)
+		return (0);
+	else
 	while (s1[i] != '\0')
 	{
 		s[i] = s1[i];
 		i++;
 	}
 	j = 0;
+	if (s2 == NULL)
+		return (0);
+	else
 	while (s2[j] != '\0')
 	{
 		s[i + j] = s2[j];

@@ -19,15 +19,12 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		while (1)
+		if (s == NULL)
 		{
-			if (s == NULL)
-			{
-				return (NULL);
-			}
-			s = str;
-			free (s);
+			return (NULL);
 		}
+		s = str;
+		free (s);
 	}
 	return (s);
 }

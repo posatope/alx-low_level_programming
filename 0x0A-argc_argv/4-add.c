@@ -7,26 +7,23 @@
  * @argv: argument vectors
  * Return: 0 on success
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int i, a;
+	int num, result = 0, i;
 
-	if (argc < 1)
+	while (argc-- > 1)
 	{
-		printf("%d\n", 0);
-	}
-	for (i = 0; argv[argc][i]; i++)
-	{
-		if ((isdigit(argv[argc][i])) == 0)
+		for (i = 0; argv[argc][i]; i++)
 		{
-			printf("Error\n");
-			return (1);
+			if (!(isdigit(argv[argc][i])))
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
+		num = atoi(argv[argc]);
+		result += num;
 	}
-	for (i = 1; i < argc; i++)
-	{
-		a = atoi(argv[i]);
-		printf("%d\n", a);
-	}
+	printf("%d\n", result);
 	return (0);
 }

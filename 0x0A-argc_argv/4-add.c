@@ -15,22 +15,19 @@ int main(int argc, char *argv[])
 	{
 		printf("%d\n", 0);
 	}
-	else
+	for (i = 0; argv[argc][i]; i++)
 	{
-		for (i = 1; i < argc; i++)
+		if ((isdigit(argv[argc][i])) == 0)
 		{
-			for (i = 0; argv[argc][i]; i++)
-			{
-				if ((isdigit(argv[argc][i])) == 0)
-				{
-					printf("Error\n");
-					return (1);
-				}
-			}
-			a = atoi(argv[i]);
-			sum += a;
-			printf("%d\n", sum);
+			printf("Error\n");
+			return (1);
 		}
+	}
+	for (i = 1; i < argc; i++)
+	{
+		a = atoi(argv[i]);
+		sum += a;
+		printf("%d\n", sum);
 	}
 	return (0);
 }

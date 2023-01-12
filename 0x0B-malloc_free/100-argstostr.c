@@ -34,13 +34,16 @@ int findij(int ac, char **av)
 char *argstostr(int ac, char **av)
 {
 	char *s;
-	int i = 0, j = 0, k = 0;
+	int i = 0, j = 0, k;
 
 	i = findij(ac, av);
+	if (ac == 0)
+		return (NULL);
 	s = malloc(i * sizeof(char));
 	if (s == NULL)
 		return (NULL);
 	i = 0;
+	k = 0;
 	while (i < ac)
 	{
 		for (j = 0; av[i][j]; j++)
@@ -48,6 +51,7 @@ char *argstostr(int ac, char **av)
 		    s[k] = av[i][j];
 			k++;
 		}
+		i++;
 		k++;
 	}
 	return (s);

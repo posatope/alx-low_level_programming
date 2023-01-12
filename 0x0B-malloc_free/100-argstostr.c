@@ -2,29 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * findij - prints buffer in hexa
- * @s1: the address of memory to print
- * @i: the address of memory to print
- * Return: Nothing.
- */
-int findij(int ac, char **av)
-{
-	int i, j, k = 0;
-
-	if (ac <= 0 || av == NULL)
-		i = 0;
-	else
-	{
-		for (i = 0; i < ac; i++) 
-		{
-			for (j = 0; av[i][j]; j++)
-				k++;
-			k++;
-		}
-	}
-	return (k);
-}
-/**
  * argstostr - A function that concatenates all arguments of your program
  * @ac: number of arguments
  * @av: array containing arguments
@@ -34,24 +11,27 @@ int findij(int ac, char **av)
 char *argstostr(int ac, char **av)
 {
 	char *s;
-	int i = 0, j = 0, k;
-
-	i = findij(ac, av);
-	if (ac == 0)
+	int i = 0, j = 0, k = 0;
+	
+	if (ac <= 0 || av == NULL)
 		return (NULL);
-	s = malloc(i * sizeof(char));
+	for (i = 0; i < ac; i++)
+	{
+		for (j = 0; av[i][j]; j++)
+			k++;
+		k++;
+	}
+	s = malloc(k * sizeof(char));
 	if (s == NULL)
 		return (NULL);
-	i = 0;
 	k = 0;
-	while (i < ac)
+	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j]; j++)
 		{
-		    s[k] = av[i][j];
+			s[k] = av[i][j];
 			k++;
 		}
-		i++;
 		k++;
 	}
 	return (s);

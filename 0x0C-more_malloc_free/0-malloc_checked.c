@@ -14,6 +14,8 @@ void *malloc_checked(unsigned int b)
 
     s = (void *)malloc(sizeof(b));
     if (s == NULL)
+    {
         printf("%d\n", 98);
+    }
     return (s);
 }

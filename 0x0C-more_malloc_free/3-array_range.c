@@ -18,7 +18,6 @@ int *array_range(int min, int max)
 		return (NULL);
 	for (a = min; a <= max; a++)
 		i++;
-	printf("%d\n", i);
 	s = malloc(i);
 	if (s == NULL)
 		return (NULL);

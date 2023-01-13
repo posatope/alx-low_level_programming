@@ -8,7 +8,7 @@
  * @i: the address of memory to print
  * Return: Nothing.
  */
-unsigned int findij(char *s1, int i)
+unsigned int findij(char *s1, unsigned int i)
 {
 	if (s1 == NULL)
 		i = 0;
@@ -21,9 +21,10 @@ unsigned int findij(char *s1, int i)
 	return (i);
 }
 /**
- * str_concat - prints buffer in hexa
+ * string_nconcat - prints buffer in hexa
  * @s1: the address of memory to print
  * @s2: the address of memory to print
+ * @n: the address of memory to print
  * Return: Nothing.
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)

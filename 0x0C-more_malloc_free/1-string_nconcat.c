@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
@@ -7,7 +8,7 @@
  * @i: the address of memory to print
  * Return: Nothing.
  */
-int findij(char *s1, int i)
+unsigned int findij(char *s1, int i)
 {
 	if (s1 == NULL)
 		i = 0;
@@ -28,7 +29,7 @@ int findij(char *s1, int i)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *s;
-	int i = 0, j = 0, k = 0;
+	unsigned int i = 0, j = 0, k = 0;
 
 	i = findij(s1, i);
 	j = findij(s2, j);

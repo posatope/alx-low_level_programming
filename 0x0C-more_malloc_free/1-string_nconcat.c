@@ -34,7 +34,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	i = findij(s1, i);
 	j = findij(s2, j);
 	if (j == 0 || n >= j)
-	    n = j;
+	{
+		n = j;
+	}
 	s = malloc((i + n) * sizeof(char));
 	if (s == NULL)
 		return (NULL);

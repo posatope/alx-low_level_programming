@@ -33,7 +33,7 @@ char *str_concat(char *s1, char *s2)
 
 	i = findij(s1, i);
 	j = findij(s2, j);
-	if (i == 0 && j = 0)
+	if (i == 0 && j == 0)
 		i = 1;
 	s = malloc((i + j - 1) * sizeof(char));
 	if (s == NULL)

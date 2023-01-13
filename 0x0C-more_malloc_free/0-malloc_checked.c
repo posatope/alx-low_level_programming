@@ -10,12 +10,12 @@
  */
 void *malloc_checked(unsigned int b)
 {
-    void *s;
+	void *s;
 
-    s = (void *)malloc(sizeof(b));
-    if (s == NULL)
-    {
-        printf("%d\n", 98);
-    }
-    return (s);
+	s = (void *)malloc(sizeof(b));
+	if (s == NULL)
+	{
+		exit(98);
+	}
+	return (s);
 }

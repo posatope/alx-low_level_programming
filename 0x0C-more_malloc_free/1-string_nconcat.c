@@ -11,13 +11,10 @@
 unsigned int findij(char *s1, unsigned int i)
 {
 	if (s1 == NULL)
-		i = 0;
-	else
-	{
-		for (i = 0; s1[i] != '\0'; i++)
-			;
-		i++;
-	}
+		s1 = "";
+	for (i = 0; s1[i] != '\0'; i++)
+		;
+	i++;
 	return (i);
 }
 /**
@@ -38,6 +35,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		n = j;
 	}
+	if (i == 0 && j == 0)
+		i = -1;
 	s = malloc((i + n + 1) * sizeof(char));
 	if (s == NULL)
 		return (NULL);

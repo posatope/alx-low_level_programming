@@ -11,3 +11,9 @@
  */
 int main(void)
 {
+#if x < 0
+	y = x * -1;
+#else
+	y = x;
+#endif
+}

@@ -1,8 +1,7 @@
 #ifndef ABS_1
-#define ABS_1
-#define ABS(x) y
+#define ABS(x)
 #if x < 0
-	y = x * -1;
+	printf("%d", (x * -1));
 #else
-	y = x;
+	printf("%d", x);
 #endif

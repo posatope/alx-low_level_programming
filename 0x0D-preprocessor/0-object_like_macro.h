@@ -7,7 +7,7 @@
  *
  * Return: Always 0.
  */
-int main(void)
+int main()
 {
 	#ifndef SIZE
 	#define SIZE 1024

@@ -11,19 +11,29 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, j, sum = 0;
-	int mat[i][j];
+	int i, j, sum1 = 0, sum2 = 0;
 
 	for (i = 0; i < size; i++)
 	{
 		for (j = 0; j < size; j++)
 		{
-			mat [i][j] = *a;
-			if(i == j)
+		    while (i == j)
+		    {
+		        sum1 += a[i][j];
+		        i++;
+			}
+		}
+	}
+	for (i = 0; i < size; i++)
+	{
+		for (j = 0; j < size; j++)
+		{
+		    while ((i + j) == (size - 1))
 			{
-				sum = sum + mat[i][j];
+		        sum2 += a[i][j];
+		        i++;
 			}
 		}		
 	}
-	printf("%d\n", sum);
+	printf("%d, %d\n", sum1, sum2);
 }

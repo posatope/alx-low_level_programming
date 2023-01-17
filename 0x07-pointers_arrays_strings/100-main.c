@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdio.h>
 /**
  * set_string - check the code
  * @s: char s1

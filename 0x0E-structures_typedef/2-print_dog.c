@@ -2,7 +2,7 @@
 #include "dog.h"
 /**
  * print_dog - a function that initialize a variable of type struct dog.
- * @d - structure for a basic dog
+ * @d: structure for a basic dog
  * Return: Always 0.
  */
 void print_dog(struct dog *d)

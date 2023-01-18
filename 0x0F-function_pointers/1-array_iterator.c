@@ -1,3 +1,4 @@
+#include "function_pointers.h"
 #include <stdio.h>
 /**
  * array_iterator - prints a name as is

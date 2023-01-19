@@ -1,11 +1,12 @@
-#include <stdio.h>
+#include "function_pointers.h"
+#include <stdlib.h>
 /**
- * array_iterator - prints a name as is
- * @array: prints a name as is
- * @size: name of the person
- * @action: prints a name as is
- * Return: Nothing.
- */
+  * int_index - searches for an integer
+  * @array: pointer to the array
+  * @size: size of the array
+  * @cmp: pointer to the function
+  * Return: index of the first element found
+  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i = 0;
@@ -22,5 +23,5 @@ int int_index(int *array, int size, int (*cmp)(int))
 				return (i);
 			}
         }
-	return (0);
+	return (-1);
 }

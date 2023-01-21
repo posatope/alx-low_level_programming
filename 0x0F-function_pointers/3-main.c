@@ -9,7 +9,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int (*func)(int, int ), a , b;
+	int (*f)(int, int );
+	int a , b;
 	if (argc == 4)
 	{
 		func = get_op_func(argv[2]);

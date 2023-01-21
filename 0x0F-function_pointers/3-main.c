@@ -9,12 +9,12 @@
  */
 int main(int argc, char *argv[])
 {
-	int (*f)(int, int );
+	int (*f)(int, int);
 	int a , b;
 	if (argc == 4)
 	{
-		func = get_op_func(argv[2]);
-		if (func == NULL)
+		f = get_op_func(argv[2]);
+		if (f == NULL)
 		{
 			printf("Error\n");
 			exit(99);
@@ -27,6 +27,6 @@ int main(int argc, char *argv[])
 	}
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
-	printf("%d\n", func(a, b));
+	printf("%d\n", f(a, b));
 	return (0);
 }

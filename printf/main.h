@@ -10,7 +10,7 @@ typedef struct op
 {
 	char *op;
 	char (*f)();
-} v_types;
+} printop;
 
 char t_char(va_list ap);
 char t_string(va_list ap); 

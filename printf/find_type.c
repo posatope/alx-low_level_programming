@@ -9,7 +9,7 @@
 char *(*find_type(char s))(va_list)
 {
 	int i;
-	v_types input_type[] = {
+	printop input_type[] = {
 		{"c", t_char},
 		{"s", t_string},
 		{"%", t_percent},
@@ -22,14 +22,12 @@ char *(*find_type(char s))(va_list)
 		{NULL, NULL}
 	};
 
-	for (i = 0; valid_types[i].valid; i++)
+	for (i = 0; input_type[i].op; i++)
 	{
-
-		if (s == *valid_types[i].valid)
+		if (s == *input_type[i].op)
 		{
-			return (valid_types[i].f);
+			return (input_type[i].f);
 		}
 	}
-
 	return (NULL);
 }

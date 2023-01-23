@@ -18,7 +18,6 @@ char (*find_type(char s))(va_list)
 		{"u", t_unsigned},
 		{"o", t_octal},
 		{"r", t_reverse},
-		{"R", t_rot13},
 		{NULL, NULL}
 	};
 

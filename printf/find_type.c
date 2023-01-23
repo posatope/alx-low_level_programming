@@ -6,7 +6,7 @@
  * @s: Type to check given as char
  * Return: pointer function of char type, valid_type matched
  */
-char *(*find_type(char s))(va_list)
+char (*find_type(char s))(va_list)
 {
 	int i;
 	printop input_type[] = {

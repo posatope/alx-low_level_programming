@@ -10,6 +10,9 @@ void free_list(list_t *head)
 	list_t *temp;
 	int i = 0;
 
+	temp = malloc(sizeof(*head));
+	if (temp == NULL)
+		return (NULL);
 	temp = head;
 	while (head != 0)
 	{

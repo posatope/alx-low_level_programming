@@ -12,7 +12,7 @@ void free_list(list_t *head)
 
 	temp = malloc(sizeof(*head));
 	if (temp == NULL)
-		return (NULL);
+		exit(98);
 	temp = head;
 	while (head != 0)
 	{

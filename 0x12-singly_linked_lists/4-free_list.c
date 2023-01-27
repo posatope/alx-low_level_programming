@@ -22,5 +22,8 @@ void free_list(list_t *head)
 	}
 	free(temp);
 	free(head);
+	free (head->str);
+	free (head->next);
+	free (head);
 	i++;
 }

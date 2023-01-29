@@ -23,9 +23,9 @@ void free_list(list_t *head)
 			printf("[%u] ", head->len);
 			printf("%s\n", head->str);
 		}
+		free(head->str);
+		free(head);
 		head = head->next;
 		i++;
 	}
-	free(head->str);
-	free(head);
 }

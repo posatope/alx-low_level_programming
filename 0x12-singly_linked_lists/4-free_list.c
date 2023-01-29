@@ -7,10 +7,23 @@
  */
 void free_list(list_t *head)
 {
+	{
+	int i = 0;
+
 	while (head)
 	{
+		if (head->str == NULL)
+		{
+			printf("[0] (nil)\n");
+		}
+		else
+		{
+			printf("[%u] ", head->len);
+			printf("%s\n", head->str);
+		}
 		free(head->str);
 		free(head);
+		head = head->next;
+		i++;
 	}
-	head = head->next;
 }

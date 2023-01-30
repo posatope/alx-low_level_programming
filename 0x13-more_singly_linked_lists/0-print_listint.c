@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * print_list - print list
+ * print_listint - print list
  * @h: list to print
  * Return: size of h
  */

@@ -14,15 +14,6 @@ void free_list(list_t *head)
 
 	while (head)
 	{
-		if (head->str == NULL)
-		{
-			printf("[0] (nil)\n");
-		}
-		else
-		{
-			printf("[%u] ", head->len);
-			printf("%s\n", head->str);
-		}
 		free(head->str);
 		free(head);
 		head = head->next;

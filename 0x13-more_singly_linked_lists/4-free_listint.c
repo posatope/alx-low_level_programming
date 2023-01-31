@@ -13,4 +13,5 @@ void free_listint(listint_t *head)
 		return;
 	free_listint(head->next);
 	free(head);
+	i++;
 }

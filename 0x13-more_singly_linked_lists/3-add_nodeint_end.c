@@ -4,7 +4,7 @@
 #include "lists.h"
 /**
  * *add_nodeint_end - print list
- * @*head: list to print
+ * @head: list to print
  * @n: new string
  * Return: size of h
  */

@@ -9,14 +9,13 @@
  */
 void free_listint2(listint_t **head)
 {
-	int i = 0;
 	listint_t *x;
 	
 	if (*head == NULL)
 	    return;
-	x = *head;
+	x = malloc(sizeof(*head));
 	if (x == NULL)
 		return;
+	x = *head;
 	free(x);
-	i++;
 }

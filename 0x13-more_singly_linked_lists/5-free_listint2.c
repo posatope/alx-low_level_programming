@@ -8,14 +8,16 @@
  * Return: Nothing
  */
 void free_listint2(listint_t **head)
+void free_listint2(listint_t **head)
 {
+	int i = 0;
 	listint_t *x;
 	
-	if (*head == NULL)
-	    return;
-	x = malloc(sizeof(*head));
-	if (x == NULL)
+	if (head == NULL)
 		return;
 	x = *head;
+	free_listint(x->next);
+	free(head);
 	free(x);
+	i++;
 }

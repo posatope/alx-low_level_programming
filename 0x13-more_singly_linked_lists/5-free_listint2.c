@@ -12,7 +12,7 @@ void free_listint2(listint_t **head)
 	int i = 0;
 
 	if (*head == NULL)
-		printf("(nil));
+		printf("(nil)");
 	*head = (*head)->next;
 	free_listint2(head);
 	free(*head);

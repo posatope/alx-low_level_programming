@@ -5,7 +5,7 @@
 
 /**
  * add_nodeint - print list
- * @*head: list to print
+ * @head: list to print
  * @n: new string
  * Return: size of h
  */

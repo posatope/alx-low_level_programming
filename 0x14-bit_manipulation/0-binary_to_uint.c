@@ -15,7 +15,7 @@ unsigned int binary_to_uint(const char *b)
 	{
 	    if (b[i] != '0' && b[i] != '1')
 			return (0);
-		m += ((b[i] - '0') * pow(2, (strlen(b) - i - 1)));
+		m += ((b[i] - '0') * _pow(2, (strlen(b) - i - 1)));
 	}
 	return (m);
 }

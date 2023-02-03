@@ -1,4 +1,4 @@
-#ifdef BIT_MAN
+#ifndef BIT_MAN
 #define BIT_MAN
 #include <stdlib.h>
 #include <string.h>

@@ -16,9 +16,7 @@ int _pow(int a, int d)
 	if (d == 0)
 		return (1);
 	for (; i < d; i++)
-	{
 		pow = pow * a;
-	}
 	return (pow);
 }
 /**
@@ -33,7 +31,7 @@ unsigned int binary_to_uint(const char *b)
 
 	for (i = 0; i < strlen(b); i++)
 	{
-	    if (b[i] != '0' && b[i] != '1')
+		if (b[i] != '0' && b[i] != '1')
 			return (0);
 		m += ((b[i] - '0') * _pow(2, (strlen(b) - i - 1)));
 	}

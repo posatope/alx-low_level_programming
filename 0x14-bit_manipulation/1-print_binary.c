@@ -5,6 +5,23 @@
 #include "_pow.c"
 #include <string.h>
 /**
+ * _pow - function that powers
+ * @a: base
+ * @d: number of times
+ * Return: the converted number, or 0
+ */
+unsigned long int _pow(int a, int d)
+{
+	int i = 0;
+	unsigned long int pow = 1;
+
+	if (d == 0)
+		return (1);
+	for (; i < d; i++)
+		pow = pow * a;
+	return (pow);
+}
+/**
  * print_binary - convert to binary
  * @n: number to be converted
  * Return: Always 0.
@@ -24,7 +41,7 @@ void print_binary(unsigned long int n)
                 break;
             }
         f = i - 1;
-        printf("%d", 1);
+        _putchar(1 + '\0');
         rem = n - (_pow(2, f));
         if (rem == 0)
         {

@@ -20,6 +20,12 @@ unsigned long int _pow(int a, int d)
 		pow = pow * a;
 	return (pow);
 }
+/**
+ * print_binary2 - convert to binary
+ * @rem: number to be converted
+ * @f: predetermine number in print_binary
+ * Return: Always 0.
+ */
 void print_binary2(unsigned long int rem, unsigned long int f)
 {
 	unsigned long int j = 0;

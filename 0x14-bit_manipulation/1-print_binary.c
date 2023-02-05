@@ -30,7 +30,7 @@ void print_binary(unsigned long int n)
     unsigned long int i = 0, f, j = 0, rem;
 
     if (n == 0 || n == 1)
-        putchar(n + '\0');
+        printf("%ld", n);
     else 
     {
         for (; i < n; i++)
@@ -39,7 +39,7 @@ void print_binary(unsigned long int n)
                 break;
             }
         f = i - 1;
-        putchar(1 + '\0');
+        printf("%ld", 1);
         rem = n - (_pow(2, f));
         if (rem == 0)
         {
@@ -51,21 +51,21 @@ void print_binary(unsigned long int n)
             for (; j < f - 2; j++)
                 putchar('0');
             putchar('0');
-            putchar(1 + '\0');
+            printf("%ld", 1);
         }
         if (rem == 2)
         {
             for (; j < f - 3; j++)
                 putchar('0');
-            putchar(1 + '\0');
+            printf("%ld", 1);
             putchar('0');
         }
         if (rem == 3)
         {
             for (; j < f - 3; j++)
                 putchar('0');
-            putchar(1 + '\0');
-            putchar(1 + '\0');
+            printf("%ld", 1);
+            printf("%ld", 1);
         }
         else
         {

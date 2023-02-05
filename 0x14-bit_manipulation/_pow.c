@@ -9,7 +9,7 @@
  * @d: number of times
  * Return: the converted number, or 0
  */
-int _pow(int a, int d)
+unsigned long int _pow(int a, int d)
 {
 	int i = 0, pow = 1;
 

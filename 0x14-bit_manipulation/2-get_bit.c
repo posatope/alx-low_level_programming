@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <limits.h>
 /**
  * get_bit - check the code
  * @n: number from user

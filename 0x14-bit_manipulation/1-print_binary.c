@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <math.h>
 #include "main.h"
+#include "_pow.c"
 #include <string.h>
 /**
  * _pow - function that powers

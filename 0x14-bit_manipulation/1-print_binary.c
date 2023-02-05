@@ -19,6 +19,7 @@ int _pow(int a, int d)
 		pow = pow * a;
 	return (pow);
 }
+}
 /**
  * print_binary - convert to binary
  * @n: number to be converted
@@ -27,7 +28,7 @@ int _pow(int a, int d)
 void print_binary(unsigned long int n)
 {
     int i = 0;
-    int d, j = 0;
+    int f, j = 0;
     unsigned long int rem;
 
     if (n == 0 || n == 1)
@@ -40,31 +41,31 @@ void print_binary(unsigned long int n)
             {
                 break;
             }
-        d = i - 1;
+        f = i - 1;
         printf("%d", 1);
-        rem = n - (_pow(2, d));
+        rem = n - (_pow(2, f));
         if (rem == 0)
         {
-            for (; j < d - 1; j++)
+            for (; j < f - 1; j++)
                 _putchar('0');
         }
         if (rem == 1)
         {
-            for (; j < d - 2; j++)
+            for (; j < f - 2; j++)
                 _putchar('0');
             _putchar('0');
             _putchar(1 + '\0');
         }
         if (rem == 2)
         {
-            for (; j < d - 3; j++)
+            for (; j < f - 3; j++)
                 _putchar('0');
             _putchar(1 + '\0');
             _putchar('0');
         }
         if (rem == 3)
         {
-            for (; j < d - 3; j++)
+            for (; j < f - 3; j++)
                 _putchar('0');
             _putchar(1 + '\0');
             _putchar(1 + '\0');
@@ -72,10 +73,10 @@ void print_binary(unsigned long int n)
         else
         {
             
-            for (i = 0; i < d; i++)
-                if (_pow(2, (d - i)) < rem)
+            for (i = 0; i < f; i++)
+                if (_pow(2, (f - i)) < rem)
                     _putchar('0');
-                else if (_pow(2, (d - i)) >= rem)
+                else if (_pow(2, (f - i)) >= rem)
                 {
                     print_binary(rem);
                     break;

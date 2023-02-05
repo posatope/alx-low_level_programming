@@ -10,8 +10,7 @@
  */
 int _pow(int a, int d)
 {
-	int i = 0;
-	int pow = 1;
+	int i = 0, pow = 1;
 
 	if (d == 0)
 		return (1);
@@ -24,11 +23,11 @@ int _pow(int a, int d)
  * @n: number to be converted
  * Return: Always 0.
  */
-void print_binary(int n)
+void print_binary(unsigned long int n)
 {
     int i = 0;
     int d, j = 0;
-    int rem;
+    unsigned long int rem;
 
     if (n == 0 || n == 1)
         printf("%ld", n);

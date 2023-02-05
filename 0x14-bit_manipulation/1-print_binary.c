@@ -75,7 +75,7 @@ void print_binary(int n)
             for (i = 0; i < d; i++)
                 if (_pow(2, (d - i)) < rem)
                     _putchar('0');
-                else if (pow(2, (d - i)) >= rem)
+                else if (_pow(2, (d - i)) >= rem)
                 {
                     print_binary(rem);
                     break;

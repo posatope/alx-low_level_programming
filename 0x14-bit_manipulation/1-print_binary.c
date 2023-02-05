@@ -66,7 +66,7 @@ void print_binary2(unsigned long int rem, unsigned long int f)
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int i = 0, f, j = 0, rem;
+	unsigned long int i = 0, f, rem;
 
 	if (n == 0 || n == 1)
 		printf("%ld", n);
@@ -80,7 +80,7 @@ void print_binary(unsigned long int n)
 		f = i - 1;
 		printf("%d", 1);
 		rem = n - (_pow(2, f));
-		if (rem >= 0 && rem <= 3)
+		if (rem <= 3)
 			print_binary2(rem, f);
 		if (rem > 3)
 		{

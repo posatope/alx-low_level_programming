@@ -1,5 +1,8 @@
-#include "main.h"
+#include <stdlib.h>
 #include <stdio.h>
+#include <math.h>
+#include "main.h"
+#include <string.h>
 #include <limits.h>
 /**
  * get_bit - check the code

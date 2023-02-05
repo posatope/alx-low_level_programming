@@ -30,7 +30,7 @@ void print_binary(unsigned long int n)
     unsigned long int i = 0, f, j = 0, rem;
 
     if (n == 0 || n == 1)
-        printf("%ld", n);
+        _putchar(n + '\0');;
     
     else 
     {

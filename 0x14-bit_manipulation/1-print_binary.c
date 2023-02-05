@@ -23,7 +23,7 @@ unsigned long int _pow(int a, int d)
 void print_binary2(unsigned long int rem, unsigned long int f)
 {
 	unsigned long int j = 0;
-	
+
 	if (rem == 0)
 	{
 		for (; j < f - 2; j++)

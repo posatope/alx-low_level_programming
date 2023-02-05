@@ -11,7 +11,7 @@
  */
 unsigned long int _pow(int a, int d)
 {
-	int i = 0, pow = 1;
+	unsigned long int i = 0, pow = 1;
 
 	if (d == 0)
 		return (1);

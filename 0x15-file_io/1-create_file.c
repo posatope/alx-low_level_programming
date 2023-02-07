@@ -13,14 +13,14 @@
  */
 int create_file(const char *filename, char *text_content)
 {
-	int i = 0, o, w;
+	int i, o, w;
 
 	if (filename == NULL)
 		return (-1);
-	if (text_content != NULL)
-		i = strlen(text_content);
 	o = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
 	w = write(o, text_content, i);
+	if (text_content != NULL)
+		i = strlen(text_content);
 	if (o == -1 || w == -1)
 		return (-1);
 	close(o);
